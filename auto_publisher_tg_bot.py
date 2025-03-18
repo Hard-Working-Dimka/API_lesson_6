@@ -32,7 +32,7 @@ def remove_image(path):
 
 
 def get_comics_data(number):
-    comics_url = f'https://xkcd.com/{number}/info.0.json'  # TODO: random function
+    comics_url = f'https://xkcd.com/{number}/info.0.json'
     response = requests.get(comics_url)
     response.raise_for_status()
     decoded_comics_data = response.json()
